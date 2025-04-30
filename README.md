@@ -78,3 +78,26 @@ Test Suite by: **Renata Rand McFadden**
 ## License
 
 This project is for academic use under MSIT 660: Platform and Network Technologies at NSU.
+
+## Screenshoots 
+
+Test without the file on the absolute path
+![Alt Text](TestSimulatorAdvanced-no-customer-file.png)
+
+Test with the file on the absolute path
+![Alt Text](TestSimulatorAdvanced-with-customer-file.png)
+
+Testing the Train.java with TestTraingBasic
+![Alt Text](TestTrainBasic-Result.png)
+
+Testing the Train.java with TestTraingAdvanced
+![Alt Text](TestTrainAdvanced-Result.png)
+
+Testing the Simulator.java with TestTraingBasic
+![Alt Text](TestSimulatorBasics-Result.png)
+
+Testing Customer.java with TestCustomerAdvanced
+![Alt Text](TestCustomerAdvanced-Result.png)
+
+Testing Customer.java with TestCustomerBasic
+![Alt Text](TestCustomerBasic-Result.png)

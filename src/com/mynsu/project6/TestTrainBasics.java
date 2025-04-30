@@ -18,7 +18,7 @@ public class TestTrainBasics {
 	// Check that there is a class Train
 	public void testCustomerClassExists() {
 	    try {
-	        Class.forName("Train");
+	        Class.forName("com.mynsu.project6.Train");
 	    } catch (ClassNotFoundException e) 
 	    {
 	        fail("Should have a class called Train");
@@ -34,7 +34,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++)  // loop through list of Constructors
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public Train(int,java.util.ArrayList)"))
+			if (value.contentEquals("public com.mynsu.project6.Train(int,java.util.ArrayList)"))
 				found = true;
 		}
 		if (!found)
@@ -51,7 +51,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("private java.util.ArrayList Train.custList"))
+			if (value.contentEquals("private java.util.ArrayList com.mynsu.project6.Train.custList"))
 				found = true;
 		}
 		if (!found)
@@ -68,7 +68,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("private int Train.stops"))
+			if (value.contentEquals("private int com.mynsu.project6.Train.stops"))
 				found = true;
 		}
 		if (!found)
@@ -85,7 +85,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("private int Train.madeStops"))
+			if (value.contentEquals("private int com.mynsu.project6.Train.madeStops"))
 				found = true;
 		}
 		if (!found)
@@ -102,7 +102,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("private int Train.currTime"))
+			if (value.contentEquals("private int com.mynsu.project6.Train.currTime"))
 				found = true;
 		}
 		if (!found)
@@ -128,7 +128,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public void Train.simulate()"))
+			if (value.contentEquals("public void com.mynsu.project6.Train.simulate()"))
 				found = true;
 		}
 		if (!found)
@@ -145,7 +145,7 @@ public class TestTrainBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public void Train.displayStops()"))
+			if (value.contentEquals("public void com.mynsu.project6.Train.displayStops()"))
 				found = true;
 		}
 		if (!found)

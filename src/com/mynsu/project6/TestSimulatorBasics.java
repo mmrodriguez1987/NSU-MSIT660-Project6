@@ -17,7 +17,7 @@ public class TestSimulatorBasics {
 	// Class exists
 	public void testSimulatorClassExists() {
 		try {
-	        Class.forName("Simulator");
+	        Class.forName("com.mynsu.project6.Simulator");
 	    } catch (ClassNotFoundException e) 
 	    {
 	        fail("Should have a class called Simulator");
@@ -43,7 +43,7 @@ public class TestSimulatorBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public int Simulator.getStopsFromUser()"))
+			if (value.contentEquals("public int com.mynsu.project6.Simulator.getStopsFromUser()"))
 				found = true;
 		}
 		if (!found)
@@ -60,7 +60,7 @@ public class TestSimulatorBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public java.io.File Simulator.getInputFile()"))
+			if (value.contentEquals("public java.io.File com.mynsu.project6.Simulator.getInputFile()"))
 				found = true;
 		}
 		if (!found)
@@ -77,7 +77,7 @@ public class TestSimulatorBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public java.util.ArrayList Simulator.checkFile(int,java.io.File)"))
+			if (value.contentEquals("public java.util.ArrayList com.mynsu.project6.Simulator.checkFile(int,java.io.File)"))
 				found = true;
 		}
 		if (!found)
@@ -94,7 +94,7 @@ public class TestSimulatorBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public void Simulator.run(int,java.util.ArrayList)"))
+			if (value.contentEquals("public void com.mynsu.project6.Simulator.run(int,java.util.ArrayList)"))
 				found = true;
 		}
 		if (!found)
@@ -111,7 +111,7 @@ public class TestSimulatorBasics {
 		for(int i = 0; i < list.length; i++) // loop through list of attributes
 		{
 			String value = ""+list[i]; // convert to string
-			if (value.contentEquals("public static void Simulator.main(java.lang.String[])"))
+			if (value.contentEquals("public static void com.mynsu.project6.Simulator.main(java.lang.String[])"))
 				found = true;
 		}
 		if (!found)
